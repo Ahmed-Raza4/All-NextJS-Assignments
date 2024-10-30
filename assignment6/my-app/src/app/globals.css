@@ -1,0 +1,462 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  font-family: 'Roboto';
+  /* box-sizing: border-box;
+  margin: 0;
+  padding: 0; */
+}
+
+.mainHeaderBody {
+  width: 100%;
+  height: 102px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.headerList {
+  margin: 80px;
+
+}
+
+.headerList ul {
+  display: flex;
+  gap: 20px;
+
+}
+
+.headerList ul li {
+  line-height: 12px;
+  letter-spacing: 20%;
+  font-size: 12px;
+  /* position: relative; */
+}
+
+.nav {
+  position: relative;
+}
+
+.nav #main::before {
+  content: "";
+  width: 45px;
+  height: 2px;
+  margin-left: -6px;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  background-color: #000;
+}
+
+.nav #main::after {
+  content: "";
+  width: 45px;
+  height: 2px;
+  margin-left: -6px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #000;
+}
+
+.heroSection1 {
+  background-color: #f8f9fa;
+  width: 100%;
+  height: 840px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero1Left {
+  height: 829px;
+  width: 35%;
+  font-family: Roboto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero1LeftText {
+  font-size: 64px;
+}
+
+.hero1LeftText h1 {
+  color: #D9D9D9;
+}
+
+.hero1LeftText p {
+  font-weight: bold;
+}
+
+.hero1Arrow{
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  top: 65%;
+  left: 35%;
+}
+
+.hero1Number{
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  top: 85%;
+  left: 35%;
+}
+
+.hero1Right {
+  height: 829px;
+  position: relative;
+}
+
+.hero1RightButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+  gap: 10px;
+  position: absolute;
+  bottom: 0px;
+  padding: 20px 35px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 20%;
+}
+
+.hero1RightButton Img {
+  width: 24px;
+  height: 24px;
+}
+
+.heroSection2 {
+  height: 465px;
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.hero2Left {
+  width: 60%;
+  height: 95%;
+  position: relative;
+}
+
+.hero2Left .rectangle8 {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.hero2Left .rectangle9 {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+}
+
+.hero2Left .rectangle10 {
+  position: absolute;
+  bottom: -10%;
+  left: 12%;
+}
+
+.hero2Right {
+  width: 40%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+
+.hero2Right .heading h1 {
+  color: #D9D9D9;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell;
+  font-size: 64px;
+}
+
+.hero2Right .paragraph {
+  width: 400px;
+  align-items: left;
+}
+
+.hero2Right .paragraph p {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.hero2RightButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  gap: 10px;
+  bottom: 0px;
+  padding: 20px 35px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 20%;
+  bottom: 20px;
+  width: 250px;
+  margin-top: 20px;
+  border-radius: 2px;
+}
+
+.hero2RightButton Img {
+  width: 24px;
+  height: 24px;
+}
+
+.heroSection3{
+  background-color: #f8f9fa;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero3Text{
+  height: 268px;
+  width: 1170px;
+}
+.hero3Heading{
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell;
+  font-size: 64px;
+  color: #D9D9D9;
+}
+.hero3TextParagraph{
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+.hero3TextLeft{
+  width: 513px;
+  height: 144px;
+  margin: 5px;
+  display: flex;
+}
+.hero3TextRight{
+  width: 513px;
+  height: 144px;
+  margin: 5px;
+  display: flex;
+}
+.hero3Number{
+  font-size: 100px;
+  font-family:'Lucida Sans';
+  color: #D9D9D9;
+}
+.hero3Para{
+font-size: 22px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: justify;
+}
+
+.ourProjectsSection{
+  height: 765px;
+}
+.projectsHeading{
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell;
+  font-size: 64px;
+  color: #D9D9D9;
+  margin-left: 30px;
+}
+.projectImages{
+  position: relative;
+  height: 650px;
+}
+.textOnImage{
+  width: 283px;
+  height: 200px;
+  z-index: 3;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+.textOnImage h1{
+  color: white;
+  font-size: 54px;
+  font-weight: bold;
+  inline-size: 2px; 
+}
+
+.textOnImage p{
+  display: flex;
+  color: white;
+}
+.textOnImage p .arrow{
+  color: white;
+  margin-left: 5px;
+}
+.project1{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+.project2{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+.project3{
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+.project4{
+  position: absolute;
+  bottom: 12%;
+  left: 2%;
+}
+.project5{
+  position: absolute;
+  bottom: 12%;
+  left: 27%;
+}
+.project6{
+  position: absolute;
+  bottom: 12%;
+  right: 3%;
+}
+.projectButton{
+  background-color: black;
+  color: white;
+  width: 250px;
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  padding: 15px 30px;
+  gap: 5px;
+}
+.contactSection{
+  height: 803px;
+  display: flex;
+}
+
+.contactLeft{
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 40%;
+}
+.contactLeft h1{
+  color: #D9D9D9;
+  font-size: 64px;
+}
+.inputField{
+  width: 391px;
+  height: 46px;
+  background-color: #F3F3F3;
+  margin: 5px;
+  font-size: 14px;
+}
+.inputFieldArea{
+  width: 391px;
+  height: 147px;
+  background-color: #F3F3F3;
+  margin: 5px;
+  font-size: 14px;
+}
+.contactButton{
+  background-color: black;
+  color: white;
+  width: 250px;
+  border-radius: 2px;
+  padding: 20px 50px;
+  margin-top: 55px;
+}
+
+.contactRight{
+  width: 60%;
+  position: relative;
+}
+.contactRight .image12{
+  position: absolute;
+  top: 25%;
+}
+
+.footer{
+  height: 470px;
+  color: white;
+  background-color: black;
+}
+.footerBody{
+  height: 417px;
+  color: white;
+  background-color: black;
+  display: flex;
+}
+.footerSec1{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerSec2{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listHead{
+  font-size: 20px;
+  font-weight: bold;
+}
+.footerSec2 ul{
+  line-height: 50px;
+}
+.footerSec3{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+.footerSec3 ul{
+  line-height: 50px;
+  margin-left: 10px; 
+}
+li .listImage{
+  display: inline;
+  margin-right: 12px;
+
+}
+.footerSec4{
+  width: 30%;
+}
+.footerSec4 h1{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 60px 10px 0px 50px;
+}
+.icons{
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.footerEnd{
+  height: 53px;
+  border-top: 0.5px solid lightgray;
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+
+
